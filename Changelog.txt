@@ -3,5 +3,5 @@ Initial version.
 
 # AMLmodel_v2
 Removed InterfaceClassLib "CommunicationInterfaceClassLib".
-Adapted RoleClassLib "CommunicationRoleClassLib" to match new code-architecture (see commit https://bitbucket.org/0xCAF3BAB3/pushlistener-architecture/commits/e6b610886daff5da449919eb8ef27b1caac29e37).
+Adapted RoleClassLib "CommunicationRoleClassLib" to match new code-architecture (see commit https://bitbucket.org/0xCAF3BAB3/pushlistener-code-architecture/commits/e6b610886daff5da449919eb8ef27b1caac29e37).
 Adapted InstanceHierarchy to the above changes.
