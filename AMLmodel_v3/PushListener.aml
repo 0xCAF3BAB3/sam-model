@@ -8,7 +8,7 @@
 			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
 			<WriterVersion>4.7.0.0</WriterVersion>
 			<WriterRelease>4.7.0.0</WriterRelease>
-			<LastWritingDateTime>2017-07-28T01:07:52.2226986+02:00</LastWritingDateTime>
+			<LastWritingDateTime>2017-08-05T11:14:23.7924036+02:00</LastWritingDateTime>
 			<WriterProjectTitle>unspecified</WriterProjectTitle>
 			<WriterProjectID>unspecified</WriterProjectID>
 		</WriterHeader>
@@ -16,24 +16,24 @@
 	<AdditionalInformation AutomationMLVersion="2.0" />
 	<InstanceHierarchy Name="PushListener">
 		<Version>1.0.0</Version>
-		<InternalElement Name="Service" ID="94491633-800e-4c1b-9906-cd722aad49f8">
+		<InternalElement Name="Service1" ID="94491633-800e-4c1b-9906-cd722aad49f8">
 			<Attribute Name="Standalone.url" AttributeDataType="xs:anyURI">
-				<Value>http://127.0.0.1/pushlistener/</Value>
+				<Value>http://127.0.0.1/service1/</Value>
 			</Attribute>
 			<Attribute Name="Service.artifactId" AttributeDataType="xs:string">
-				<Value>pushlistener</Value>
+				<Value>service1</Value>
 			</Attribute>
 			<Attribute Name="Service.groupId" AttributeDataType="xs:string">
 				<Value>com.jwa</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.connection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/pushlistener.git</Value>
+				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/service1.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.developerConnection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/pushlistener.git</Value>
+				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/service1.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.url" AttributeDataType="xs:anyURI">
-				<Value>https://bitbucket.org/0xCAF3BAB3/pushlistener</Value>
+				<Value>https://bitbucket.org/0xCAF3BAB3/service1</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.tag" AttributeDataType="xs:string">
 				<Value>HEAD</Value>
@@ -43,7 +43,7 @@
 					<Value>component1</Value>
 				</Attribute>
 				<Attribute Name="Component.groupId" AttributeDataType="xs:string">
-					<Value>com.jwa.pushlistener</Value>
+					<Value>com.jwa.service1</Value>
 				</Attribute>
 				<InternalElement Name="Ports" ID="6f683e85-fd7b-4850-9d09-9a902016c527">
 					<InternalElement Name="Port1" ID="8b689792-3a90-4722-8242-731b01396939">
@@ -108,7 +108,7 @@
 					<Value>component2</Value>
 				</Attribute>
 				<Attribute Name="Component.groupId" AttributeDataType="xs:string">
-					<Value>com.jwa.pushlistener</Value>
+					<Value>com.jwa.service1</Value>
 				</Attribute>
 				<InternalElement Name="Ports" ID="bb0d930d-43c5-472e-9504-4a3a3b64be85">
 					<InternalElement Name="Port1" ID="63f96bb3-546a-42e8-8027-821ff7205284">
@@ -182,7 +182,7 @@
 					<Value>component3</Value>
 				</Attribute>
 				<Attribute Name="Component.groupId" AttributeDataType="xs:string">
-					<Value>com.jwa.pushlistener</Value>
+					<Value>com.jwa.service1</Value>
 				</Attribute>
 				<InternalElement Name="Ports" ID="ed3ea103-73e4-42b7-b856-7e212bd91131">
 					<InternalElement Name="Port1" ID="4d0c7abc-eb5b-4dce-a037-68be18ee6880">
