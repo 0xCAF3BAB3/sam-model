@@ -12,7 +12,7 @@ The following repositories also belong to it:
  * [amlmodel-code-generator][amlmodel-code-generator repository]
 
 
-[Changelog file]: src/master/CHANGELOG.md
+[Changelog file]: https://bitbucket.org/0xCAF3BAB3/pushlistener-amlmodel/src/master/CHANGELOG.md
 [pushlistener-code-architecture repository]: https://bitbucket.org/0xCAF3BAB3/pushlistener-code-architecture/
 [amlmodel-code-generator repository]: https://bitbucket.org/0xCAF3BAB3/amlmodel-code-generator/
 [AutomationML page]: https://www.automationml.org/
