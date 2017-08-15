@@ -8,7 +8,7 @@
 			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
 			<WriterVersion>4.7.0.0</WriterVersion>
 			<WriterRelease>4.7.0.0</WriterRelease>
-			<LastWritingDateTime>2017-08-05T19:33:02.7211554+02:00</LastWritingDateTime>
+			<LastWritingDateTime>2017-08-16T01:28:37.6143929+02:00</LastWritingDateTime>
 			<WriterProjectTitle>unspecified</WriterProjectTitle>
 			<WriterProjectID>unspecified</WriterProjectID>
 		</WriterHeader>
@@ -295,6 +295,204 @@
 			<InternalLink Name="CommunicationPortsLink4" RefPartnerSideA="bd20da93-e687-4ac2-9c61-f6a7b8c232c0:ConnectionPoint" RefPartnerSideB="924b899d-875e-4086-a546-f7ffb032207f:ConnectionPoint" />
 			<InternalLink Name="CommunicationPortsLink5" RefPartnerSideA="ed827aed-bd50-4e13-bd17-b07206c68ef7:ConnectionPoint" RefPartnerSideB="4d0c7abc-eb5b-4dce-a037-68be18ee6880:ConnectionPoint" />
 			<InternalLink Name="CommunicationPortsLink6" RefPartnerSideA="7f8cbdd2-48a6-43c1-96d5-8a11bf726028:ConnectionPoint" RefPartnerSideB="c735b49a-b494-4497-ab75-bb1206963878:ConnectionPoint" />
+			<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Service" />
+		</InternalElement>
+		<InternalElement Name="NewService" ID="f8fa83a2-ecc0-4dbc-8598-db48c38c9e98">
+			<Attribute Name="Standalone.url" AttributeDataType="xs:anyURI">
+				<Value>http://127.0.0.1/newService/</Value>
+			</Attribute>
+			<Attribute Name="Service.artifactId" AttributeDataType="xs:string">
+				<Value>newservice</Value>
+			</Attribute>
+			<Attribute Name="Service.groupId" AttributeDataType="xs:string">
+				<Value>com.test</Value>
+			</Attribute>
+			<Attribute Name="GitRepository.connection" AttributeDataType="xs:string">
+				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/newservice.git</Value>
+			</Attribute>
+			<Attribute Name="GitRepository.developerConnection" AttributeDataType="xs:string">
+				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/newservice.git</Value>
+			</Attribute>
+			<Attribute Name="GitRepository.url" AttributeDataType="xs:anyURI">
+				<Value>https://bitbucket.org/0xCAF3BAB3/newservice</Value>
+			</Attribute>
+			<Attribute Name="GitRepository.tag" AttributeDataType="xs:string">
+				<Value>HEAD</Value>
+			</Attribute>
+			<InternalElement Name="Node1" ID="703c27a1-773a-49e1-adda-04521299f761">
+				<Attribute Name="Component.artifactId" AttributeDataType="xs:string">
+					<Value>node1</Value>
+				</Attribute>
+				<Attribute Name="Component.groupId" AttributeDataType="xs:string">
+					<Value>com.test.newservice</Value>
+				</Attribute>
+				<InternalElement Name="Ports" ID="0f4db014-8dc6-460f-8c7f-59978f8b84ee">
+					<InternalElement Name="SyncSenderPort" ID="2ea4ab8d-2957-4b18-85e2-a1d3fa8c1af6">
+						<Attribute Name="PortParameters.udp.hostname" AttributeDataType="xs:string">
+							<Value>127.0.0.1</Value>
+						</Attribute>
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22021</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>SyncSenderRequestMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="ac9acbe3-7312-44d7-80ac-24d1cce9cd46" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Sender/SynchronousSender" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="AsyncSenderPort" ID="594b4c00-1048-4714-8d46-5edb00215efe">
+						<Attribute Name="PortParameters.udp.hostname" AttributeDataType="xs:string">
+							<Value>127.0.0.1</Value>
+						</Attribute>
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22022</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>AsyncSenderRequestMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="9c223f74-e5b8-427d-a16a-64ee3cb3edf5" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Sender/AsynchronousSender" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="IncomingPort" ID="87912b87-395b-495b-a4f3-0a03db0674b6">
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22013</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>IncomingResponseMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="e765f6aa-a257-4a6f-b77a-50ff077ed126" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Receiver" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="Incoming2Port" ID="8b39e855-0b4d-4329-a96d-7c1a0e880934">
+						<Attribute Name="PortParameters.rmi.portRegistry" AttributeDataType="xs:string">
+							<Value>22014</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Rmi</Value>
+						</Attribute>
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Receiver" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
+				</InternalElement>
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
+			</InternalElement>
+			<InternalElement Name="Node2" ID="9ca939be-8572-4bf7-97cc-a2f59ab4c1c1">
+				<Attribute Name="Component.artifactId" AttributeDataType="xs:string">
+					<Value>node2</Value>
+				</Attribute>
+				<Attribute Name="Component.groupId" AttributeDataType="xs:string">
+					<Value>com.test.newservice</Value>
+				</Attribute>
+				<InternalElement Name="Ports" ID="11ed9849-3feb-4e5b-8bbf-ec94fce2078b">
+					<InternalElement Name="ListenerPort" ID="eb07aff9-04b4-4e7f-b917-e8ba4ab25ef4">
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22021</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>ListenerResponseMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="332eb062-c3de-487d-a586-bcb7b6bdb72a" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Receiver" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="Listener2Port" ID="bdbbce7f-cf4b-414d-9378-6d00163bf46e">
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22022</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>Listener2ResponseMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="eb9f3161-6a55-4780-a7a1-e4eea8ad66f6" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Receiver" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="SenderPort" ID="465e56c1-b3cd-4c85-889e-6068201f8d93">
+						<Attribute Name="PortParameters.udp.hostname" AttributeDataType="xs:string">
+							<Value>127.0.0.1</Value>
+						</Attribute>
+						<Attribute Name="PortParameters.udp.port" AttributeDataType="xs:string">
+							<Value>22013</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Udp</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>SenderRequestMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="0c8c59bc-c8cf-4ba3-9726-f4fa68499131" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Sender/SynchronousSender" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<InternalElement Name="Sender2Port" ID="9e9e4478-fc4e-49cb-b202-19eebc2dffde">
+						<Attribute Name="PortParameters.rmi.hostname" AttributeDataType="xs:string">
+							<Value>127.0.0.1</Value>
+						</Attribute>
+						<Attribute Name="PortParameters.rmi.portRegistry" AttributeDataType="xs:string">
+							<Value>22014</Value>
+						</Attribute>
+						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
+							<Value>Rmi</Value>
+						</Attribute>
+						<Attribute Name="MessageModel.name" AttributeDataType="xs:string">
+							<Value>Sender2RequestMessage</Value>
+						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="cc86abe1-7448-444f-9de3-3ee18f46d636" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Sender/SynchronousSender" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
+						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
+						<SupportedRoleClass RefRoleClassPath="DomainModelRoleClassLib/MessageModel" />
+						<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Port" />
+					</InternalElement>
+					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
+				</InternalElement>
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
+			</InternalElement>
+			<SupportedRoleClass RefRoleClassPath="EnvironmentRoleClassLib/Standalone" />
+			<SupportedRoleClass RefRoleClassPath="SourcecodeRepositoryRoleClassLib/GitRepository" />
+			<InternalLink Name="CommunicationPortsLink1" RefPartnerSideA="2ea4ab8d-2957-4b18-85e2-a1d3fa8c1af6:ConnectionPoint" RefPartnerSideB="eb07aff9-04b4-4e7f-b917-e8ba4ab25ef4:ConnectionPoint" />
+			<InternalLink Name="CommunicationPortsLink2" RefPartnerSideA="594b4c00-1048-4714-8d46-5edb00215efe:ConnectionPoint" RefPartnerSideB="bdbbce7f-cf4b-414d-9378-6d00163bf46e:ConnectionPoint" />
+			<InternalLink Name="CommunicationPortsLink3" RefPartnerSideA="465e56c1-b3cd-4c85-889e-6068201f8d93:ConnectionPoint" RefPartnerSideB="87912b87-395b-495b-a4f3-0a03db0674b6:ConnectionPoint" />
+			<InternalLink Name="CommunicationPortsLink4" RefPartnerSideA="9e9e4478-fc4e-49cb-b202-19eebc2dffde:ConnectionPoint" RefPartnerSideB="8b39e855-0b4d-4329-a96d-7c1a0e880934:ConnectionPoint" />
 			<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Service" />
 		</InternalElement>
 	</InstanceHierarchy>

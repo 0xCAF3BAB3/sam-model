@@ -27,3 +27,4 @@
  * Adapted RC "MessageModel": has no Sub-RCs anymore and instead added an attribute "name".
  * Adapted RC "PortStyle": has no Sub-RCs anymore and instead added an attribute "style".
  * Adapted InstanceHierarchy to the above changes.
+ * Added service "NewService" with two components to IH, which have Udp/Rmi and Receiver/SynchronousSender/AsynchronousSender ports (to have more examples in the AML model).
