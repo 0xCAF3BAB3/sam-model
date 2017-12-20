@@ -1,4 +1,4 @@
-# Readme
+# Readme for project 'Bachelor's Thesis Julian Waibel: Push-Listener Model'
 
 ## 1. Content
 Contains the model elements (e.g. Role classes), that were used to describe in the [AutomationML][AutomationML page] format a service, that is made up of different components, which communicate with each other. The model elements are applied to an example scenario *PushListener*.
