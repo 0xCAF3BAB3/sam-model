@@ -16,7 +16,7 @@
  * Adapted RoleClassLib "CommunicationRoleClassLib":
 	- IE "Port" is not divided into Receiver and Sender and its concrete implementations anymore like it was in AMLmodel_v2.
 	- Instead, IE "Port" is directly assigned to every port.
-	- nd an additional IE "PortStyle" is assigned to every port to indicate communication-style (Rmi, Udp, etc.).
+	- And an additional IE "PortStyle" is assigned to every port to indicate communication-style (Rmi, Udp, etc.).
 	- And an additional IE "PortType" is assigned to every port to indicate communication-type (Receiver, Sender, etc.).
 	- And an additional IE "PortParameters" is assigned to every port, which holds further communication-configuration-parameters (Rmi parameters, Udp parameters, etc.); e.g. PortParameters.Rmi.hostname or PortParameters.Rmi.portRegistry
 	- --> Better global view instead of very specialized view.
