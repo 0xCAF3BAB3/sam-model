@@ -391,6 +391,7 @@
 						<Attribute Name="PortStyle.style" AttributeDataType="xs:string">
 							<Value>Rmi</Value>
 						</Attribute>
+						<ExternalInterface Name="ConnectionPoint" ID="bf86e3bc-8671-46e5-8b8d-29bd6e03709c" />
 						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortType/Receiver" />
 						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortStyle" />
 						<SupportedRoleClass RefRoleClassPath="CommunicationRoleClassLib/PortParameters" />
