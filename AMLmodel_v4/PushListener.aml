@@ -121,7 +121,7 @@
 					</InternalElement>
 					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
 				</InternalElement>
-				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/Java" />
 				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
 			</InternalElement>
 			<InternalElement Name="Component2" ID="53a0c56a-3c8d-4691-b768-2328305434da">
@@ -225,7 +225,7 @@
 					</InternalElement>
 					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
 				</InternalElement>
-				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/Java" />
 				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
 			</InternalElement>
 			<InternalElement Name="Component3" ID="54d43a55-d9e9-4a71-be08-761109d619e0">
@@ -284,7 +284,7 @@
 					</InternalElement>
 					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
 				</InternalElement>
-				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/Java" />
 				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
 			</InternalElement>
 			<SupportedRoleClass RefRoleClassPath="EnvironmentRoleClassLib/Standalone" />
@@ -399,7 +399,7 @@
 					</InternalElement>
 					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
 				</InternalElement>
-				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/Java" />
 				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
 			</InternalElement>
 			<InternalElement Name="Node2" ID="9ca939be-8572-4bf7-97cc-a2f59ab4c1c1">
@@ -485,7 +485,7 @@
 					</InternalElement>
 					<RoleRequirements RefBaseRoleClassPath="CommunicationRoleClassLib/Ports" />
 				</InternalElement>
-				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/ProgrammingLanguage/Java" />
+				<SupportedRoleClass RefRoleClassPath="ProgrammingLanguageRoleClassLib/Java" />
 				<RoleRequirements RefBaseRoleClassPath="ArchitectureRoleClassLib/Component" />
 			</InternalElement>
 			<SupportedRoleClass RefRoleClassPath="EnvironmentRoleClassLib/Standalone" />
@@ -565,9 +565,9 @@
 	</RoleClassLib>
 	<RoleClassLib Name="EnvironmentRoleClassLib">
 		<Version>1.0.0</Version>
-		<RoleClass Name="Container" RefBaseClassPath="AutomationMLBaseRole">
-			<RoleClass Name="Tomcat" RefBaseClassPath="Container" />
-			<RoleClass Name="Jetty" RefBaseClassPath="Container" />
+		<RoleClass Name="Container" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+			<RoleClass Name="Tomcat" RefBaseClassPath="EnvironmentRoleClassLib/Container" />
+			<RoleClass Name="Jetty" RefBaseClassPath="EnvironmentRoleClassLib/Container" />
 		</RoleClass>
 		<RoleClass Name="Cloud" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
 		<RoleClass Name="Standalone" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
@@ -576,10 +576,8 @@
 	</RoleClassLib>
 	<RoleClassLib Name="ProgrammingLanguageRoleClassLib">
 		<Version>1.0.0</Version>
-		<RoleClass Name="ProgrammingLanguage" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
-			<RoleClass Name="Java" RefBaseClassPath="ProgrammingLanguage" />
-			<RoleClass Name="C#" RefBaseClassPath="ProgrammingLanguage" />
-		</RoleClass>
+		<RoleClass Name="Java" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+		<RoleClass Name="C#" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
 	</RoleClassLib>
 	<RoleClassLib Name="SourcecodeRepositoryRoleClassLib">
 		<Version>1.0.0</Version>
