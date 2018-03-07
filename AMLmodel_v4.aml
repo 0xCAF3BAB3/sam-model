@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CAEXFile FileName="PushListener.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CAEXFile FileName="AMLmodel_v4.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<AdditionalInformation>
 		<WriterHeader>
 			<WriterName>AutomationML Editor</WriterName>
@@ -14,7 +14,7 @@
 		</WriterHeader>
 	</AdditionalInformation>
 	<AdditionalInformation AutomationMLVersion="2.0" />
-	<InstanceHierarchy Name="PushListener">
+	<InstanceHierarchy Name="ExampleScenario">
 		<Version>1.0.0</Version>
 		<InternalElement Name="Service1" ID="94491633-800e-4c1b-9906-cd722aad49f8">
 			<Attribute Name="Standalone.url" AttributeDataType="xs:anyURI">
@@ -27,13 +27,13 @@
 				<Value>com.jwa</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.connection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/service1.git</Value>
+				<Value>scm:git:git@github.com:0xCAF3BAB3/service1.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.developerConnection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/service1.git</Value>
+				<Value>scm:git:git@github.com:0xCAF3BAB3/service1.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.url" AttributeDataType="xs:anyURI">
-				<Value>https://bitbucket.org/0xCAF3BAB3/service1</Value>
+				<Value>https://github.com/0xCAF3BAB3/service1</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.tag" AttributeDataType="xs:string">
 				<Value>HEAD</Value>
@@ -308,13 +308,13 @@
 				<Value>com.test</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.connection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/newservice.git</Value>
+				<Value>scm:git:git@github.com:0xCAF3BAB3/newservice.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.developerConnection" AttributeDataType="xs:string">
-				<Value>scm:git:git@bitbucket.org:0xCAF3BAB3/newservice.git</Value>
+				<Value>scm:git:git@github.com:0xCAF3BAB3/newservice.git</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.url" AttributeDataType="xs:anyURI">
-				<Value>https://bitbucket.org/0xCAF3BAB3/newservice</Value>
+				<Value>https://github.com/0xCAF3BAB3/newservice</Value>
 			</Attribute>
 			<Attribute Name="GitRepository.tag" AttributeDataType="xs:string">
 				<Value>HEAD</Value>

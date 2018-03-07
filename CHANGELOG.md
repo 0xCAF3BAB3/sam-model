@@ -5,12 +5,12 @@
 
 ## AMLmodel_v2
  * Removed InterfaceClassLib "CommunicationInterfaceClassLib".
- * Adapted RoleClassLib "CommunicationRoleClassLib" to match new code-architecture (see commit https://bitbucket.org/0xCAF3BAB3/pushlistener-code-architecture/commits/e6b610886daff5da449919eb8ef27b1caac29e37).
+ * Adapted RoleClassLib "CommunicationRoleClassLib" to match new code-architecture.
  * Adapted InstanceHierarchy to the above changes.
 
 ## AMLmodel_v3
  * Removed BusinessRoleClassLib and its assignments in InstanceHierarchy because it is currently not used for code-generation.
- * Renamed IH IE "PushListenerSystem" in "Service".
+ * Renamed IH IE "ExampleScenarioSystem" in "Service".
  * Renamed IH IEs "Node1", "Node2" and "Node3" in "Component1", "Component2" and "Component3".
  * Renamed IE "CommunicationPorts" (located inside every component) in "Ports".
  * Adapted RoleClassLib "CommunicationRoleClassLib":

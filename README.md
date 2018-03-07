@@ -1,18 +1,20 @@
-# Readme for project 'Bachelor's Thesis Julian Waibel: Push-Listener Model'
+# Readme
 
-## 1. Content
-Contains the model elements (e.g. Role classes), that were used to describe in the [AutomationML][AutomationML page] format a service, that is made up of different components, which communicate with each other. The model elements are applied to an example scenario *PushListener*.
-See the [Changelog][Changelog file] for more information.
-
-## 2. About
-This repository is part of the bachelor thesis of JWa in the year 2017.
+## 1. About
+This repository is part of the bachelor's thesis of Julian Waibel at the Technical University of Vienna.
 The following repositories also belong to it:
 
- * [pushlistener-code-architecture][pushlistener-code-architecture repository]
- * [amlmodel-code-generator][amlmodel-code-generator repository]
+ * [sam-transformator-architecture][sam-transformator-architecture repository]
+ * [sam-transformator][sam-transformator repository]
+
+## 2. Content
+Contains an integrated software architecture model (SAM) based on [AutomationML][AutomationML page].
+New AutomationML entities are introduced to model the requirements of the main stakeholders introduced in this bachelor's thesis.
+The model is shown based on an example scenario which is described in the bachelor's thesis.
+See the [Changelog][Changelog file] for more information.
 
 
-[Changelog file]: https://bitbucket.org/0xCAF3BAB3/pushlistener-amlmodel/src/master/CHANGELOG.md
-[pushlistener-code-architecture repository]: https://bitbucket.org/0xCAF3BAB3/pushlistener-code-architecture/
-[amlmodel-code-generator repository]: https://bitbucket.org/0xCAF3BAB3/amlmodel-code-generator/
+[Changelog file]: https://github.com/0xCAF3BAB3/sam-model/blob/master/CHANGELOG.md
+[sam-transformator-architecture repository]: https://github.com/0xCAF3BAB3/sam-transformator-architecture/
+[sam-transformator repository]: https://github.com/0xCAF3BAB3/sam-transformator/
 [AutomationML page]: https://www.automationml.org/
